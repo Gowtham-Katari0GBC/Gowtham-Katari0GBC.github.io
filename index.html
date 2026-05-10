@@ -240,6 +240,12 @@ nav {
   color: var(--accent);
   overflow: hidden;
 }
+.photo-placeholder img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
 .photo-placeholder span { font-size: 0.85rem; color: var(--text-muted); margin-top: 8px; }
 
 /* STATS BAR */
@@ -633,7 +639,7 @@ footer {
     <div class="hero-text">
       <div class="hero-badge"><span class="dot"></span> Open to opportunities in Canada</div>
       <h1>Hi, I'm <span class="gradient">Gowtham Katari</span></h1>
-      <p class="hero-desc">Data Analyst with 3.5+ years of experience transforming complex datasets into actionable insights across banking, insurance, financial services, and manufacturing. Based in Toronto, Canada.</p>
+      <p class="hero-desc">Data Analyst with 3.5+ years of experience transforming complex datasets into actionable insights across banking, insurance, financial services, and manufacturing. Based in [...]
       <div class="hero-buttons">
         <a href="#contact" class="btn-primary">Get In Touch</a>
         <a href="#projects" class="btn-secondary">View Projects</a>
@@ -642,8 +648,7 @@ footer {
     <div class="hero-photo">
       <div class="photo-frame">
         <div class="photo-placeholder">
-          👨‍💻
-          <span>Add your photo here</span>
+          <img src="Gowtham_Photo.png" alt="Gowtham Katari">
         </div>
       </div>
     </div>
@@ -679,10 +684,10 @@ footer {
     <div class="section-title">Turning Data Into Business Strategy</div>
     <div class="about-grid">
       <div class="about-text">
-        <p>I am a <strong>Data Analyst</strong> with over 3.5 years of experience driving measurable business outcomes across <strong>banking, insurance, financial services, retail, and manufacturing</strong> industries.</p>
-        <p>I specialize in <strong>data analysis, ETL pipeline development, business intelligence, and predictive modeling</strong>, transforming complex datasets into actionable insights that enable cost savings, revenue growth, risk mitigation, and operational efficiency.</p>
-        <p>Currently at <strong>igus Inc. (Toronto)</strong>, I analyze large-scale manufacturing, supply chain, and financial datasets (5M+ records/month) to optimize demand forecasting, automate financial reporting, and support sustainability initiatives.</p>
-        <p>Previously at <strong>Wipro Limited</strong>, I supported global banking and financial services clients by building automated ETL pipelines, developing credit risk scoring and customer segmentation models, and performing fraud detection analysis supporting AML compliance.</p>
+        <p>I am a <strong>Data Analyst</strong> with over 3.5 years of experience driving measurable business outcomes across <strong>banking, insurance, financial services, retail, and manufactu[...]
+        <p>I specialize in <strong>data analysis, ETL pipeline development, business intelligence, and predictive modeling</strong>, transforming complex datasets into actionable insights that en[...]
+        <p>Currently at <strong>igus Inc. (Toronto)</strong>, I analyze large-scale manufacturing, supply chain, and financial datasets (5M+ records/month) to optimize demand forecasting, automat[...]
+        <p>Previously at <strong>Wipro Limited</strong>, I supported global banking and financial services clients by building automated ETL pipelines, developing credit risk scoring and customer[...]
       </div>
       <div class="info-cards">
         <div class="info-card">
@@ -813,7 +818,7 @@ footer {
         </div>
         <div class="timeline-company">igus Inc. | Toronto, Canada | Hybrid</div>
         <ul class="timeline-bullets">
-          <li>Analyzed large-scale manufacturing, supply chain, and financial datasets (5M+ records/month) to identify efficiency gaps, reducing operational costs by 12% and improving on-time delivery by 9%</li>
+          <li>Analyzed large-scale manufacturing, supply chain, and financial datasets (5M+ records/month) to identify efficiency gaps, reducing operational costs by 12% and improving on-time del[...]
           <li>Built and automated end-to-end ETL pipelines using Python and SQL, saving 30+ hours/month and ensuring data integrity for executive-level financial reporting</li>
           <li>Developed interactive Power BI dashboards tracking KPIs such as sales growth, inventory turnover, and revenue forecasting, improving reporting accuracy by 25%</li>
           <li>Led SAS-to-Python migration of legacy reporting workflows, reducing report generation time by 35%</li>
@@ -855,7 +860,7 @@ footer {
         <div class="project-banner b1"></div>
         <div class="project-content">
           <h3>Campaign Analytics & Cloud Migration</h3>
-          <p>Led conversion of legacy Base SAS campaign processes to Python on GCP/BigQuery for banking marketing initiatives. Designed target list generation, customer segmentation, and experimental design workflows across multiple channels.</p>
+          <p>Led conversion of legacy Base SAS campaign processes to Python on GCP/BigQuery for banking marketing initiatives. Designed target list generation, customer segmentation, and experime[...]
           <div class="project-tech">
             <span>Base SAS</span><span>Python</span><span>GCP</span><span>BigQuery</span><span>Power BI</span><span>GitHub</span>
           </div>
@@ -869,7 +874,7 @@ footer {
         <div class="project-banner b2"></div>
         <div class="project-content">
           <h3>Supply Chain & Demand Forecasting</h3>
-          <p>Integrated manufacturing, logistics, and finance datasets (5M+ records/month) into Snowflake ETL pipelines. Built predictive forecasting and customer segmentation models to optimize inventory and working capital.</p>
+          <p>Integrated manufacturing, logistics, and finance datasets (5M+ records/month) into Snowflake ETL pipelines. Built predictive forecasting and customer segmentation models to optimize [...]
           <div class="project-tech">
             <span>Python</span><span>Snowflake</span><span>Power BI</span><span>SAS</span><span>dbt</span><span>GitHub</span>
           </div>
@@ -884,7 +889,7 @@ footer {
         <div class="project-banner b3"></div>
         <div class="project-content">
           <h3>GFXL Data Visualization of Africa</h3>
-          <p>Designed and implemented a Power BI dashboard to visualize market trends of Africa's top companies, identifying tech expansion opportunities. Technology sector's underrepresentation at just 0.8% highlighted growth potential in South Africa and Kenya.</p>
+          <p>Designed and implemented a Power BI dashboard to visualize market trends of Africa's top companies, identifying tech expansion opportunities. Technology sector's underrepresentation [...]
           <div class="project-tech">
             <span>Power BI</span><span>Python</span><span>Pandas</span><span>Data Visualization</span>
           </div>
@@ -897,7 +902,7 @@ footer {
         <div class="project-banner b4"></div>
         <div class="project-content">
           <h3>TTC Subway Delays Analysis</h3>
-          <p>Transformed 49,392 TTC subway delay records (2023-2024) into actionable insights using Python. Identified Kennedy BD (1,709 incidents) as key hotspot and passenger issues as top delay drivers, recommending targeted fixes.</p>
+          <p>Transformed 49,392 TTC subway delay records (2023-2024) into actionable insights using Python. Identified Kennedy BD (1,709 incidents) as key hotspot and passenger issues as top dela[...]
           <div class="project-tech">
             <span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span>
           </div>
@@ -1002,25 +1007,25 @@ footer {
             <div class="c-value">+1 (437) 661-1713</div>
           </div>
         </a>
-        <a href="https://www.linkedin.com/in/gowtham-katari" target="_blank" class="contact-item">
-          <div class="c-icon">💼</div>
+        <a href="https://linkedin.com/in/gowthamkatari" class="contact-item" target="_blank">
+          <div class="c-icon">🔗</div>
           <div>
             <div class="c-label">LinkedIn</div>
-            <div class="c-value">linkedin.com/in/gowtham-katari</div>
+            <div class="c-value">linkedin.com/in/gowthamkatari</div>
           </div>
         </a>
-        <a href="#" class="contact-item">
-          <div class="c-icon">📍</div>
+        <a href="https://github.com/Gowtham-Katari0GBC" class="contact-item" target="_blank">
+          <div class="c-icon">💻</div>
           <div>
-            <div class="c-label">Location</div>
-            <div class="c-value">Toronto, Ontario, Canada</div>
+            <div class="c-label">GitHub</div>
+            <div class="c-value">github.com/Gowtham-Katari0GBC</div>
           </div>
         </a>
       </div>
       <div class="contact-cta">
         <h3>Let's Work Together</h3>
-        <p>I am passionate about solving real-world business problems through data-driven decision-making. Whether you have a role to discuss, a project to collaborate on, or just want to connect, I'd love to hear from you.</p>
-        <a href="mailto:gowthamkatari64@gmail.com" class="btn-primary">Send Me an Email</a>
+        <p>I'm always interested in hearing about new opportunities and projects. Feel free to reach out with any questions or collaboration ideas!</p>
+        <a href="mailto:gowthamkatari64@gmail.com" class="btn-primary" style="display: inline-block;">Send Me an Email</a>
       </div>
     </div>
   </div>
@@ -1028,27 +1033,22 @@ footer {
 
 <!-- FOOTER -->
 <footer>
-  <p>&copy; 2026 Gowtham Katari. Built with passion for data.</p>
+  <p>&copy; 2026 Gowtham Katari. All rights reserved. | <a href="#" style="color: var(--accent2); text-decoration: none;">Privacy Policy</a></p>
 </footer>
 
 <script>
-// Scroll animation
+// Intersection Observer for fade-in animations
+const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -100px 0px' };
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.1 });
+}, observerOptions);
 
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-// Smooth scroll for nav links
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', (e) => {
-    document.querySelector('.nav-links').classList.remove('active');
-  });
-});
 </script>
 
 </body>
