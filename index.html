@@ -639,7 +639,7 @@ footer {
     <div class="hero-text">
       <div class="hero-badge"><span class="dot"></span> Open to opportunities in Canada</div>
       <h1>Hi, I'm <span class="gradient">Gowtham Katari</span></h1>
-      <p class="hero-desc">Data Analyst with 3.5+ years of experience transforming complex datasets into actionable insights across banking, insurance, financial services, and manufacturing. Based in [...]
+      <p class="hero-desc">Data Analyst with 3.5+ years of experience transforming complex datasets into actionable insights across banking, insurance, financial services, and manufacturing. Base[...]
       <div class="hero-buttons">
         <a href="#contact" class="btn-primary">Get In Touch</a>
         <a href="#projects" class="btn-secondary">View Projects</a>
@@ -648,7 +648,7 @@ footer {
     <div class="hero-photo">
       <div class="photo-frame">
         <div class="photo-placeholder">
-          <img src="Gowtham_Photo.png" alt="Gowtham Katari">
+          <img src="https://raw.githubusercontent.com/Gowtham-Katari0GBC/Gowtham-Katari0GBC.github.io/main/Gowtham_Photo.png" alt="Gowtham Katari">
         </div>
       </div>
     </div>
@@ -1000,32 +1000,31 @@ footer {
             <div class="c-value">gowthamkatari64@gmail.com</div>
           </div>
         </a>
-        <a href="tel:+14376611713" class="contact-item">
-          <div class="c-icon">📱</div>
-          <div>
-            <div class="c-label">Phone</div>
-            <div class="c-value">+1 (437) 661-1713</div>
-          </div>
-        </a>
-        <a href="https://linkedin.com/in/gowthamkatari" class="contact-item" target="_blank">
-          <div class="c-icon">🔗</div>
+        <a href="https://linkedin.com/in/gowtham-katari" target="_blank" class="contact-item">
+          <div class="c-icon">💼</div>
           <div>
             <div class="c-label">LinkedIn</div>
-            <div class="c-value">linkedin.com/in/gowthamkatari</div>
+            <div class="c-value">Gowtham Katari</div>
           </div>
         </a>
-        <a href="https://github.com/Gowtham-Katari0GBC" class="contact-item" target="_blank">
+        <a href="https://github.com/Gowtham-Katari0GBC" target="_blank" class="contact-item">
           <div class="c-icon">💻</div>
           <div>
             <div class="c-label">GitHub</div>
-            <div class="c-value">github.com/Gowtham-Katari0GBC</div>
+            <div class="c-value">Gowtham-Katari0GBC</div>
+          </div>
+        </a>
+        <a href="tel:+1-437-999-1234" class="contact-item">
+          <div class="c-icon">📱</div>
+          <div>
+            <div class="c-label">Phone</div>
+            <div class="c-value">+1 (437) 999-1234</div>
           </div>
         </a>
       </div>
       <div class="contact-cta">
         <h3>Let's Work Together</h3>
-        <p>I'm always interested in hearing about new opportunities and projects. Feel free to reach out with any questions or collaboration ideas!</p>
-        <a href="mailto:gowthamkatari64@gmail.com" class="btn-primary" style="display: inline-block;">Send Me an Email</a>
+        <p>I'm interested in data analyst opportunities and would love to hear about your projects or needs. Drop me a message and let's create something impactful!</p>
       </div>
     </div>
   </div>
@@ -1033,22 +1032,26 @@ footer {
 
 <!-- FOOTER -->
 <footer>
-  <p>&copy; 2026 Gowtham Katari. All rights reserved. | <a href="#" style="color: var(--accent2); text-decoration: none;">Privacy Policy</a></p>
+  <p>&copy; 2026 Gowtham Katari. All rights reserved. | Built with ❤️ using HTML & CSS</p>
 </footer>
 
 <script>
 // Intersection Observer for fade-in animations
-const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -100px 0px' };
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
     }
   });
-}, observerOptions);
+}, { threshold: 0.1 });
 
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Mobile menu toggle
+function toggleMobileMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');
+}
 </script>
 
 </body>
